@@ -1,0 +1,101 @@
+/* import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* set base font size for easy pixel to rem conversions 10px = 1rem */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: linear-gradient(#B068E9, #6463E7);
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.bg-mobile {
+    width: 24rem;
+    height: 18rem;
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.bg-shadow-mobile {
+    width: 24rem;
+    height: 10.5rem;
+    display: block;
+    margin: auto;
+    margin-top: -7.2rem;
+}
+
+section {
+    min-width: 32.7rem;
+    min-height: 53.3rem;
+    max-width: 32.7rem;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: -10.5rem;
+    border-radius: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+    align-self: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+p {
+    margin: 0%;
+}
+
+div.bg {
+    overflow: none;
+}
+
+.container {
+    border-bottom: solid 1px #E8E8EA;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    margin-top: 1.9rem;
+    
+}
+
+.accordion {
+    border: none;
+    background-color: #ffffff;
+    color: #4B4C5F;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.3rem;
+    padding-bottom: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active, .accordion:hover {
+    font-weight: 700;
+}
+
+.panel {
+    font-size: 1.3rem;
+    color: #787887;
+    margin-bottom: 1.6rem;
+    display: none;
+    overflow: hidden;
+}
+
+.icon {
+    width: .9rem;
+    height: .7rem;
+    margin-top:.58rem;
+}
