@@ -18,6 +18,10 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+main {
+    margin-bottom: 8.5rem;
+}
+
 .bg-mobile {
     width: 24rem;
     height: 18rem;
@@ -50,17 +54,13 @@ section {
 h1 {
     font-size: 3.2rem;
     align-self: center;
-    margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin-top: 12.8rem;
 }
 
 p {
     margin: 0%;
 }
 
-div.bg {
-    overflow: none;
-}
 
 .container {
     border-bottom: solid 1px #E8E8EA;
@@ -80,6 +80,14 @@ div.bg {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    transition: .4s;
+}
+
+#accordion {
+    margin-top: auto;
+    padding-bottom: 4.8rem;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 2.3rem;
 }
 
 .active, .accordion:hover {
@@ -91,7 +99,6 @@ div.bg {
     color: #787887;
     margin-bottom: 1.6rem;
     display: none;
-    overflow: hidden;
 }
 
 .icon {
