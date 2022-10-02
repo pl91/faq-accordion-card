@@ -14,12 +14,15 @@ body {
     background-image: linear-gradient(#B068E9, #6463E7);
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0%;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
 main {
-    margin-bottom: 8.5rem;
+    margin-top: 2rem;
+    margin-bottom: 6.3rem;
+    width: 32.7rem;   
 }
 
 .bg-mobile {
@@ -38,10 +41,7 @@ main {
     margin-top: -7.2rem;
 }
 
-section {
-    min-width: 32.7rem;
-    min-height: 53.3rem;
-    max-width: 32.7rem;
+section { 
     background-color: #ffffff;
     margin: auto;
     margin-top: -10.5rem;
@@ -90,12 +90,16 @@ p {
     border-radius: 2.3rem;
 }
 
-.active, .accordion:hover {
+.active {
     font-weight: 700;
 }
 
+.accordion:hover {
+  color: #F47B56;
+}
+
 .panel {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #787887;
     margin-bottom: 1.6rem;
     display: none;
@@ -105,4 +109,92 @@ p {
     width: .9rem;
     height: .7rem;
     margin-top:.58rem;
+}
+
+.box {
+  display: none;
+}
+
+
+/* Desktop view  1440px x 768 */
+@media screen and (min-width: 920px) {
+
+  body {
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
+    background-color: #ffffff;
+    min-width: 92rem;
+    min-height: 50.9rem;
+    border-radius: 2.3rem;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: 96.8rem 94.4rem;
+    background-position: -57rem -28.5rem;
+    position: static;
+    background-repeat: no-repeat;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  }
+
+  .bg {
+    min-width: 44.5rem;
+    min-height: 50.9rem;
+    background-image: url(./images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -8rem;
+  }
+
+  .bg-mobile {
+    display: none;
+    min-width: 47.2rem;
+    min-height: 35.9rem;
+  }
+
+  .bg-shadow-mobile {
+    display: none;
+    min-width: 47.2rem;
+    min-height: 35.9rem;
+  }
+
+  section {
+   margin: 0%;
+   margin-top: 6.4rem;
+   margin-bottom: 8.3rem;
+  }
+
+  h1 {
+    margin: 0%;
+    align-self: flex-start;
+    margin-bottom: 2.6rem;
+  }
+
+  #accordion {
+    border: none;
+    flex-direction: row;
+    margin: 0%;
+    width: 35rem;
+    padding: 0%;
+    border: none;
+    box-shadow: none;
+    margin-right: 9.5rem;
+  }
+
+  .container {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .accordion {
+    font-size: 1.4rem;
+  }
+
+  .box {
+    display: block;
+    margin-top: 20.6rem;
+    margin-left: -9.2rem;
+  }
 }
